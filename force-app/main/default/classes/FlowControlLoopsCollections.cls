@@ -313,11 +313,17 @@ public with sharing class FlowControlLoopsCollections {
     public static Integer sumPositiveIntegers() {
         List<Integer> numbers = new List<Integer>{-1, 2, -3, 4, -5, 6}; //DO NOT CHANGE
 
+        Integer sumPositive = 0;
         // Loop through the list of integers
-            // if the number is negative skip this iteration
-        
+        for (Integer num : numbers) {
 
-        return null; // Replace null with the variable you used to store the result
+            // if the number is negative skip this iteration
+            if (num > 0) {
+                sumPositive += num;
+            }
+        }
+
+        return sumPositive; // Replace null with the variable you used to store the result
     }
 
     /**
